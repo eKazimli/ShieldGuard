@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "ShieldGuard Browser Protection",
+  "version": "1.0.0",
+  "description": "ShieldGuard local browser protection.",
+  "minimum_chrome_version": "120",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "alarms"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://127.0.0.1:17845/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "ShieldGuard"
+  }
+}
